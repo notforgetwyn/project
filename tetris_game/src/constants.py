@@ -103,9 +103,19 @@ SCORE_TRIPLE = 500
 SCORE_TETRIS = 800
 LINES_PER_LEVEL = 10
 
-# Font
-FONT_NAME = 'arial'
+# Font (use Chinese-compatible font on Windows)
+FONT_NAME = 'SimHei'
 FONT_SIZE_TITLE = 48
 FONT_SIZE_LARGE = 32
 FONT_SIZE_MEDIUM = 24
 FONT_SIZE_SMALL = 18
+
+# UI Text (Chinese, using unicode escape for safety)
+TEXT_NEXT = "\u4E0B\u4E00\u4E2A"          # 下一个
+TEXT_SCORE = "\u5F97\u5206"                 # 得分
+TEXT_LEVEL = "\u7B49\u7EA7"                 # 等级
+TEXT_LINES = "\u6D88\u884C"                 # 消行
+TEXT_GAME_OVER = "\u6E38\u620F\u7ED3\u675F"  # 游戏结束
+TEXT_FINAL_SCORE = "\u6700\u7EC8\u5F97\u5206"  # 最终得分
+TEXT_RESTART_HINT = "\u6309 R \u91CD\u65B0\u5F00\u59CB\u6216 ESC \u8FD4\u56DE\u83DC\u5355"  # 按 R 重新开始或 ESC 返回菜单
+TEXT_OPERATION_HINT = "\u2190\u2192/\u4E0D\u4E0D \u79FB\u52A8  \u2191/W \u65CB\u8F6C  \u2193/S \u52A0\u901F  \u7A7A\u683C \u786C\u964D"  # 操作提示
